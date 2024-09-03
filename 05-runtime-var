@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo " please enter user name "
+
+read USERNAME
+
+echo " pls enter ur password "
+
+read -s PASSWORD
+
+echo "enteread usernaem is $USERNAME and pass is ${PASSWORD} "
+
+
