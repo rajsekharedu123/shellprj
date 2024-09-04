@@ -3,6 +3,7 @@
 number=$runvar
 
 if [ $number -gt 50 ]
+then 
 
     echo " number entered is greated the 50 $number "
 else 
