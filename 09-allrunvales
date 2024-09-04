@@ -1,3 +1,4 @@
 #!bin/bash
 
 echo " all the values passd at run time are $@ "
+echo "number of varbles passed $# "
