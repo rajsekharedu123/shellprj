@@ -24,7 +24,7 @@ ls -cbsdkjdbcjdbcj
 if [ $? -ne 0 ]
 then 
     echo " command executed with error  ls -cbsdkjdbcjdbcj "
-    exit 1
+    # exit 1
 else 
     echo " command executed success" 
 
