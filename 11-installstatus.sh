@@ -1,8 +1,8 @@
 #!bin/bash
 
-UID=$(id -u)
+ID=$(id -u)
 
-if [ $UID -ne 0 ]
+if [ $ID -ne 0 ]
 then 
     echo "ur id is not root "
 else 
