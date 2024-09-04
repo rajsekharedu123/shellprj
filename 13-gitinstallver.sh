@@ -1,4 +1,8 @@
 #!/bin/bash
+softinstall()
+{
+    echo " installing mysql server"
+} 
 
 verifymysql()
 {
@@ -27,7 +31,4 @@ else
 fi
 
 
-softinstall()
-{
-    echo " installing mysql server"
-} 
+
