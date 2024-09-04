@@ -2,7 +2,7 @@
 
 userid=$(id -u)
 
-if [ $id -ne 0 ]
+if [ $userid -ne 0 ]
 then 
     echo "ur nor root user pls have root previlages"
     exit 1
