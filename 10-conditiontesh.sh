@@ -7,5 +7,5 @@ then
     echo " number entered is greated the 50 $number "
 else 
  
-    echo " number entered is less the 50 $number "
+    echo " number entered is less the 50 $number \n"
 fi 
