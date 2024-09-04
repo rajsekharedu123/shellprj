@@ -1,17 +1,5 @@
 #!/bin/bash
 
-userid=$(id -u)
-
-if [ $userid -ne 0 ]
-then 
-    echo "ur nor root user pls have root previlages"
-    exit 1
-else 
-    echo " root logged in"
-    echo 
-    verifymysql
-fi
-
 verifymysql()
 {
     dnf list installed mysql
@@ -24,6 +12,20 @@ verifymysql()
         echo " mysql is alredy installed"
     fi  
 }
+
+
+userid=$(id -u)
+
+if [ $userid -ne 0 ]
+then 
+    echo "ur nor root user pls have root previlages"
+    exit 1
+else 
+    echo " root logged in"
+    echo 
+    verifymysql
+fi
+
 
 softinstall()
 {
