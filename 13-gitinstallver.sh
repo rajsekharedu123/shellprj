@@ -7,6 +7,8 @@ then
     echo "ur nor root user pls have root previlages"
     exit 1
 else 
+    echo " root logged in"
+    echo 
     verifymysql
 fi
 
