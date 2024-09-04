@@ -24,7 +24,16 @@ ls -cbsdkjdbcjdbcj
 if [ $? -ne 0 ]
 then 
     echo " command executed with error  ls -cbsdkjdbcjdbcj "
+    exit 1
 else 
     echo " command executed success" 
 
+fi
+
+var=10
+if [ $var -eq 10 ]
+then 
+    echo " val is $var "
+else 
+    echo " val not 10 "
 fi
