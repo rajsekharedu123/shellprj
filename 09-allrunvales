@@ -5,5 +5,5 @@ echo "number of varbles passed $# "
 echo " ur script anem $0 "
 echo " current wrk dir $PWD "
 echo " process id of the current script pid is : $$ "
-sleep 100
+sleep 100 &
 echo " PID last run process is : $! "
