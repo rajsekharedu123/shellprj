@@ -14,8 +14,8 @@ checkfpoint()
 {
     dnf list installed mysql
     if [ $? -ne 0 ]
-    then    echo "mysql is not installed"
-        echo "/n"
+    then
+        echo "mysql is not installed"
         softinstall
     
     else 
