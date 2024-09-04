@@ -2,6 +2,6 @@
 
 date
 
-datevar=$(date)
+datevar=$(date +%F)
 
 echo " todays date is $datevar "
