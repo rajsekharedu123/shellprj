@@ -7,3 +7,4 @@ then
     echo "ur id is not root "
 else 
     echo "ur is root "
+fi
