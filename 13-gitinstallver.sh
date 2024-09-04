@@ -7,10 +7,10 @@ then
     echo "ur nor root user pls have root previlages"
     exit 1
 else 
-    checkfpoint
+    verifymysql
 fi
 
-checkfpoint()
+verifymysql()
 {
     dnf list installed mysql
     if [ $? -ne 0 ]
