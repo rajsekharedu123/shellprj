@@ -4,3 +4,7 @@ do
     echo " $i "
 done
 
+for package in $@
+do
+    echo " $package "
+done
