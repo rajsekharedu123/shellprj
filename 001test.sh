@@ -18,8 +18,17 @@ CHECK_ROOT()
         echo "u logged with user : $USERID " | tee -a $LOG_FILE
     fi
 }
-
+USAGE()
+{
+        echo " the script shold be executed as $0.sh arg1 arg2 " | tee -a $LOG_FILE
+        exit 1
+}
 
 echo -e "$R script started executing  at $TIMESTAMP $N" | tee -a $LOG_FILE
 USERID=$(id -u)
 CHECK_ROOT
+
+if [ $# -eq 0 ]
+then 
+    USEAGE
+fi
