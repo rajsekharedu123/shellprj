@@ -7,4 +7,5 @@ echo $SCRIPT_NAME
 echo $TIMESTAMP
 echo 
 
-echo -e "$R Please run this script with root priveleges $N" | tee -a $LOG_FILE
+
+echo -e "$R script started executing  at $TIMESTAMP $N" | tee -a $LOG_FILE
