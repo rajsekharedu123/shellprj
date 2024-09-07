@@ -32,3 +32,12 @@ if [ $# -eq 0 ]
 then 
     USEAGE
 fi
+
+for package in $@
+do 
+    dnf list installed $package
+    if [ $? -ne 0 ]
+    then
+        echo "$package not installed , will be installed now" | tee -a $LOG_FILE
+
+done
