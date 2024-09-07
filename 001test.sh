@@ -7,9 +7,10 @@ echo $SCRIPT_NAME
 echo $TIMESTAMP
 echo 
 
-CHECK_ROOT(){
+CHECK_ROOT()
+{
 
-    if [$USERID -ne 0]
+    if [ $USERID -ne 0 ]
     then 
         echo " pls use root access/privilages" | tee -a $LOG_FILE
         exit 1
